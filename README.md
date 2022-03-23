@@ -1,3 +1,7 @@
+This is a fork of [OpenABE](https://github.com/zeutro/openabe/) with updated installation scripts following [this issue](https://github.com/zeutro/openabe/issues/61). Actually, this is a fork of [ChantMisaya/openabe](https://github.com/ChantMisaya/openabe), so all thanks should go to ChantMisaya. To easily install OpenABE, check out the [installOpenABE.sh](./installOpenABE.sh) file, read it carefully and update the paths accordingly. Below, you can find the original readme.
+
+
+
 # OpenABE
 
 OpenABE is a cryptographic library that incorporates a variety of attribute-based encryption (ABE) algorithms, industry standard cryptographic functions and tools, and an intuitive application programming interface (API). OpenABE is intended to allow developers to seamlessly incorporate ABE technology into applications that would benefit from ABE to protect and control access to sensitive data. OpenABE is designed to be easy to use and does not require developers to be encryption experts.
