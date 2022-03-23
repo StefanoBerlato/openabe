@@ -1,4 +1,4 @@
-This is a fork of [OpenABE](https://github.com/zeutro/openabe/) with updated installation scripts following [this issue](https://github.com/zeutro/openabe/issues/61). Actually, this is a fork of [ChantMisaya/openabe](https://github.com/ChantMisaya/openabe), so all thanks should go to ChantMisaya. To easily install OpenABE, check out the [installOpenABE.sh](./installOpenABE.sh) file, read it carefully and update the paths accordingly. Below, you can find the original readme.
+This is a fork of [OpenABE](https://github.com/zeutro/openabe/) with updated installation scripts following [this issue](https://github.com/zeutro/openabe/issues/61). Actually, this is a fork of [ChantMisaya/openabe](https://github.com/ChantMisaya/openabe), so all thanks should go to ChantMisaya. To easily install OpenABE, check out the [installOpenABE.sh](./installOpenABE.sh) file, read it carefully and update the paths accordingly. Then, run with `sudo bash ./installOpenABE.sh`. Below, you can find the original readme.
 
 
 
