@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Setup environment for Android. 
 if [ $# -eq 2 ]; then
