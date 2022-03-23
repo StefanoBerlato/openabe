@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Setup environment for Android. 
 if [ $# -eq 2 ]; then
   ANDROID_NDK_ROOT=$1
