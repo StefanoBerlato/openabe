@@ -791,7 +791,7 @@ bool operator==(const G1 &x, const G1 &y) {
   bool result;
 #if defined(BP_WITH_OPENSSL)
   result =
-      (G1_ELEM_cmp(GET_BP_GROUP(x.bgroup), x.m_G1, y.m_G1, NULL) == G_RLC_EQ);
+      (G1_ELEM_cmp(GET_BP_GROUP(x.bgroup), x.m_G1, y.m_G1, NULL) == G_CMP_EQ);
 #else
   result = (g1_cmp(x.m_G1, y.m_G1) == RLC_EQ);
 #endif
@@ -802,7 +802,7 @@ bool operator!=(const G1 &x, const G1 &y) {
   bool result;
 #if defined(BP_WITH_OPENSSL)
   result =
-      (G1_ELEM_cmp(GET_BP_GROUP(x.bgroup), x.m_G1, y.m_G1, NULL) != G_RLC_EQ);
+      (G1_ELEM_cmp(GET_BP_GROUP(x.bgroup), x.m_G1, y.m_G1, NULL) != G_CMP_EQ);
 #else
   result = (g1_cmp(x.m_G1, y.m_G1) != RLC_EQ);
 #endif
@@ -1002,12 +1002,12 @@ ostream& operator<<(ostream& os, const G2& g2)
 
 bool operator==(const G2& x,const G2& y)
 {
-    return (g2_cmp_op(GET_BP_GROUP(x.bgroup), const_cast<G2&>(x).m_G2, const_cast<G2&>(y).m_G2) == G_RLC_EQ);
+    return (g2_cmp_op(GET_BP_GROUP(x.bgroup), const_cast<G2&>(x).m_G2, const_cast<G2&>(y).m_G2) == G_CMP_EQ);
 }
 
 bool operator!=(const G2& x,const G2& y)
 {
-    return (g2_cmp_op(GET_BP_GROUP(x.bgroup), const_cast<G2&>(x).m_G2, const_cast<G2&>(y).m_G2) != G_RLC_EQ);
+    return (g2_cmp_op(GET_BP_GROUP(x.bgroup), const_cast<G2&>(x).m_G2, const_cast<G2&>(y).m_G2) != G_CMP_EQ);
 }
 
 void
@@ -1198,9 +1198,9 @@ bool operator==(const GT& x,const GT& y)
 {
     bool result;
 #if defined(BP_WITH_OPENSSL)
-    result = (GT_ELEM_cmp(x.m_GT, y.m_GT) == G_RLC_EQ);
+    result = (GT_ELEM_cmp(x.m_GT, y.m_GT) == G_CMP_EQ);
 #else
-    result = (gt_cmp(const_cast<GT&>(x).m_GT, const_cast<GT&>(y).m_GT) == G_RLC_EQ);
+    result = (gt_cmp(const_cast<GT&>(x).m_GT, const_cast<GT&>(y).m_GT) == G_CMP_EQ);
 #endif
     return result;
 }
@@ -1209,9 +1209,9 @@ bool operator!=(const GT& x, const GT& y)
 {
     bool result;
 #if defined(BP_WITH_OPENSSL)
-    result = (GT_ELEM_cmp(x.m_GT, y.m_GT) != G_RLC_EQ);
+    result = (GT_ELEM_cmp(x.m_GT, y.m_GT) != G_CMP_EQ);
 #else
-    result = (gt_cmp(const_cast<GT&>(x).m_GT, const_cast<GT&>(y).m_GT) != G_RLC_EQ);
+    result = (gt_cmp(const_cast<GT&>(x).m_GT, const_cast<GT&>(y).m_GT) != G_CMP_EQ);
 #endif
     return result;
 }

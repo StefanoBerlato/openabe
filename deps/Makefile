@@ -3,7 +3,7 @@ include ../Makefile.common
 .PHONY: all clean
 
 DIRS=$(DEPS_PACKAGES)
-# relic openssl gtest
+# flex gmp relic openssl gtest
 all: $(DIRS)
 	mkdir -p root/lib
 	mkdir -p root/bin
@@ -15,14 +15,14 @@ endif
 
 clean: $(DIRS)
 	rm -rf root
-	for d in relic openssl; do \
-	# for d in relic openssl gtest; do \
+	for d in flex gmp relic openssl; do \
+	# for d in flex gmp relic openssl gtest; do \
 		make -C $$d clean; \
 	done
 
 distclean: clean
 	rm -rf root
-	for d in relic openssl; do \
-	# for d in relic openssl gtest; do \
+	for d in flex gmp relic openssl; do \
+	# for d in flex gmp relic openssl gtest; do \
 		make -C $$d distclean; \
 	done

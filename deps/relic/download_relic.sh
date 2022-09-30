@@ -5,7 +5,7 @@ FORMAT=tar.gz
 LINK=https://github.com/relic-toolkit/relic
 RELIC=${1:-relic-toolkit-${VERSION}}
 
-# commit of as of 22/07/2022
+# commit of as of 09/01/2019
 # comment 'Update LABEL with recent changes'
 COMMIT=40f24f017d461647ce6202c3ccaae3c22037369c
 

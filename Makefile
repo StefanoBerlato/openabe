@@ -1,6 +1,6 @@
 .PHONY: all clean deps src cli examples bindings
 
-all: check-env deps src cli examples
+all: check-env deps src # cli examples
 
 check-env:
 ifndef ZROOT
@@ -17,7 +17,7 @@ deps:
 
 src:
 	$(MAKE) -C src
-	$(MAKE) -C cli 
+	#$(MAKE) -C cli
 
 cli:
 	$(MAKE) -C cli 

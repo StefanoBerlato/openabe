@@ -368,7 +368,7 @@ int ec_point_is_on_curve(ec_group_t group, ec_point_t p) {
   int ret = EC_POINT_is_on_curve(group, p, NULL);
   return ret;
 #else
-  if (ep_on_curve(p))
+  if (ec_ep_on_curve(p))
     return 1;
 #endif
   return 0;

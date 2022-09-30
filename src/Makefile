@@ -49,7 +49,7 @@ GENFILES = location.hh position.hh stack.hh *.tab.* zscanner.cpp
 
 PROGRAMS = test_libopenabe test_zml test_zml1 test_zml2 test_policy test_abe test_pke test_ske test_zsym test_keystore bench_libopenabe profile_libopenabe fuzz_policy fuzz_attrlist
 
-all: $(OABELIB) $(ZSYMLIB) $(PROGRAMS)
+all: $(OABELIB) $(ZSYMLIB) # $(PROGRAMS)
 
 zml/zelement.o:
 	$(CC) $(CCFLAGS) -c zml/zelement.c -o zelement.o

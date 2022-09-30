@@ -80,7 +80,7 @@ typedef BIGNUM* bignum_t;
 #define BN_CMP_LT       -1
 #define BN_CMP_EQ        0
 #define BN_CMP_GT        1
-#define G_RLC_EQ         BN_CMP_EQ
+#define G_CMP_EQ         BN_CMP_EQ
 
 /* END OpenSSL macro definitions */
 
@@ -108,7 +108,7 @@ typedef bn_t bignum_t;
 
 #define BN_POSITIVE                   RLC_POS
 #define BN_NEGATIVE                   RLC_NEG
-#define G_RLC_EQ                      RLC_EQ
+#define G_CMP_EQ                      RLC_EQ
 
 int bn_is_one(const bn_t a);
 /* END of RELIC macro definitions */

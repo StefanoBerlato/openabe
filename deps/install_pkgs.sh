@@ -137,6 +137,9 @@ function main_darwin() {
   install_package doxygen
   install_package bison
   install_package node
+  install_package lzip
+  install_package texinfo
+  install_package help2man
 
   sudo pip install virtualenv
 }
@@ -231,6 +234,9 @@ function main_ubuntu() {
   install_package python3-pip
   install_package nodejs
   install_package npm
+  install_package lzip
+  install_package texinfo
+  install_package help2man
   upgrade_cmake
   upgrade_bison
   
@@ -258,6 +264,9 @@ function main_debian() {
   install_package python3-pip
   install_package nodejs
   install_package npm
+  install_package lzip
+  install_package texinfo
+  install_package help2man
   upgrade_cmake
   upgrade_bison
 
@@ -290,7 +299,10 @@ function main_redhat() {
   install_package python-setuptools  
   install_package python36-setuptools
   install_package python36-devel
-  install_package python36-pip  
+  install_package python36-pip
+  install_package lzip
+  install_package texinfo
+  install_package help2man
   upgrade_cmake
   upgrade_bison
   echo "/usr/local/lib" > /etc/ld.so.conf.d/libztk.conf
@@ -319,7 +331,10 @@ function main_fedora() {
   install_package python-setuptools  
   install_package python3-setuptools
   install_package python3-devel
-  install_package python3-pip  
+  install_package python3-pip
+  install_package lzip
+  install_package texinfo
+  install_package help2man
   upgrade_cmake
   upgrade_bison
   
